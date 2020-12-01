@@ -1,11 +1,11 @@
 # coding=utf-8
 import os
-import re
 import platform
+import re
 from subprocess import PIPE, Popen
 from threading import Lock
-from config import LOG_FILE, EVENT_NAME, NAMESPACE
 
+from config import LOG_FILE, EVENT_NAME, NAMESPACE
 from public import socketio
 
 
@@ -14,9 +14,9 @@ class Command:
     def __init__(self, cmd_name, event_name=None, name_space=None, *args, **kwargs):
         '''
 
-        :param cmd_name: 命令名称
-        :param event_name: socketio 事件名称
-        :param name_space: socketio 名称空间
+        :param cmd_name: Command name
+        :param event_name: socketio Event name
+        :param name_space: socketio Name space
         '''
         self.lock = self.get_lock()
         self.close_thread = False

@@ -1,15 +1,16 @@
-实现服务器上的tail和top命令的实时展示，将结果实时展示在web上
+
+Realize the real-time display of tail and top commands on the server, and display the results on the web in real time
 
 
-tail在页面上限制了显示长度，自动滚动显示最新数据
+Tail limits the display length on the page and automatically scrolls to display the latest data
 
-tail页面效果如下
+The tail page effect is as follows
 
 <p align="center">
   <img width="600" src="./screenshot/tail.png" >
 </p>
 
-top页面效果如下
+The top page effect is as follows
 
 <p align="center">
   <img width="600" src="./screenshot/top.png" >

@@ -1,8 +1,6 @@
-# coding=utf-8
+from flask import render_template
 
 from public import app, socketio
-
-from flask import render_template
 from utils.command import ps_command, top_command, tail_command
 
 
